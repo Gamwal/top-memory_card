@@ -1,28 +1,98 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 :root {
   font-size: 16px;
+  --primary-color: #4caf50;
+  --secondary-color: #f9f9f9;
+  --card-bg-color: #fff;
+  --card-border-color: #ddd;
+  --card-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 #card {
-  height: 250px;
+  height: 220px;
   width: 220px;
-  background-color: brown;
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
   border-radius: 10px;
-  padding: 10px;
+  box-shadow: 0 4px 8px var(--card-shadow-color);
+  transition: transform 0.2s;
+}
+
+#card:hover {
+  transform: scale(1.05);
+}
+
+#card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#card div {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 #cardHolder {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
 }
 
 #top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--card-shadow-color);
+}
+
+#top h1 {
+  font-size: 1.5rem;
+}
+
+#top p {
+  font-size: 1rem;
+}
+
+#top div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#top input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 #card img {

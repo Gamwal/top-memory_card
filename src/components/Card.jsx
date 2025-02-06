@@ -4,7 +4,7 @@ function Card({ imageUrl, onClick }) {
       <div>
         <img src={imageUrl} alt="" />
       </div>
-      <div>{"Name"}</div>
+      {/* <div>{"Name"}</div> */}
     </div>
   );
 }
