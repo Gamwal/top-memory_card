@@ -3,7 +3,7 @@ import CardHolder from "./CardHolder";
 import gifUrls from "../assets/urls.json";
 
 function MemoryGame() {
-  const [numCards, setNumCards] = useState(10);
+  const [numCards, setNumCards] = useState(12);
   const [clickedCards, setClickedCards] = useState([]);
   const [currentScore, setCurrentScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
